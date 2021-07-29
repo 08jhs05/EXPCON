@@ -1,0 +1,128 @@
+:root {
+    --RED: #D34848;
+    --YELLOW: #FFB33F;
+    --AQUA: #1FE1E9;
+}
+
+/* Navigation */
+
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+.navbar .nav-container{
+    display: flex;
+}
+
+.navbar .navDropdown{
+    padding-top: 93px;
+    padding-left: 84px;
+}
+
+.navbar .navDropdown .navTitle {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 48px;
+}
+
+.navbar .navDropdown .navTitle:hover {
+    cursor: pointer;
+}
+
+.navbar .navDropdown .navTitle .navTitle-text {
+    font: normal normal normal 48px/57px Helvetica Neue;
+    margin-left: 38px;
+    letter-spacing: 4.8px;
+}
+
+.navbar .navDropdown .navDropdownItemList {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .navDropdown .navDropdownItemList .navDropdownItem{
+    font: normal normal bold 47px/57px Helvetica Neue;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 47px;
+    letter-spacing: 4.7px;
+}
+
+/* Hero section */
+.section-hero {
+    height: 1080px;
+}
+
+.section-hero .bgImage {
+    filter: brightness(60%);
+    position: absolute;
+    width: 100%;
+    height: 1080px;
+    object-fit: cover;
+    z-index: -999;
+}
+
+.section-hero .contents{
+    padding-top: 442px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-hero .title {
+    font: normal normal bold 65px/79px Helvetica Neue;
+    letter-spacing: 6.5px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.section-hero .description {
+    width: 840px;
+    padding-top: 32px;
+    text-align: center;
+    font: normal normal normal 32px/44px Helvetica Neue;
+    letter-spacing: 3.2px;
+    color: #FFFFFF;
+}
+
+/* RED section */
+.section-RED {
+    height: 1080px;
+    background-color: var(--RED);
+}
+
+/* YELLOW section */
+.section-YELLOW {
+    height: 1080px;
+    background-color: var(--YELLOW);
+}
+
+/* Perks section */
+.section-perks {
+    height: 1080px;
+    background-color: #191919;
+}
+
+/* Reviews section */
+.section-reviews {
+    height: 1080px;
+    background-color: var(--AQUA);
+}
+
+/* GetNow section */
+.section-GetNow {
+    height: 814px;
+    background-color: #191919;
+}
+
+/* Footer section */
+.section-Footer {
+    height: 538px;
+    background-color: #5E33D1;
+}
