@@ -1,10 +1,14 @@
 import React from 'react';
+import { Navbar, Container } from 'react-bootstrap';
+import NavDropdown from './NavDropdown';
 
 function Navigation(props){
     return (
-        <div>
-            Navbar
-        </div>
+        <Navbar bg="light" expand="lg" className="navbar">
+            <Container className="nav-container">
+                <NavDropdown />
+            </Container>
+        </Navbar>
     )
 }
 
