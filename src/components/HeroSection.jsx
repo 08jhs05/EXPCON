@@ -1,4 +1,5 @@
 import React from 'react';
+import GradientCTABtn from './GradientCTABtn';
 
 function HeroSection(props){
     return (
@@ -11,6 +12,7 @@ function HeroSection(props){
                 <div className="description">
                     Experience your favourite artists like never before and from the comfort of your own home.
                 </div>
+                <GradientCTABtn/>
             </div>
         </div>
     );
