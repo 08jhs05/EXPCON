@@ -9,15 +9,13 @@
 .navbar {
     position: fixed;
     top: 0;
+    width: 100%;
 }
 
 .navbar .nav-container{
     display: flex;
-}
-
-.navbar .navDropdown{
-    padding-top: 93px;
-    padding-left: 84px;
+    justify-content: space-between;
+    padding: 80px 80px 0 80px;
 }
 
 .navbar .navDropdown .navTitle {
@@ -54,7 +52,12 @@
     letter-spacing: 4.7px;
 }
 
+.navbar .navDropdown .navDropdownItemList .navDropdownItem:hover{
+    cursor: pointer;
+}
+
 /* Hero section */
+
 .section-hero {
     height: 1080px;
 }
@@ -77,6 +80,7 @@
 
 .section-hero .title {
     font: normal normal bold 65px/79px Helvetica Neue;
+    text-align: center;
     letter-spacing: 6.5px;
     color: #FFFFFF;
     opacity: 1;
@@ -84,7 +88,8 @@
 
 .section-hero .description {
     width: 840px;
-    padding-top: 32px;
+    margin-top: 32px;
+    margin-bottom: 44px;
     text-align: center;
     font: normal normal normal 32px/44px Helvetica Neue;
     letter-spacing: 3.2px;
@@ -92,9 +97,64 @@
 }
 
 /* RED section */
+
 .section-RED {
     height: 1080px;
     background-color: var(--RED);
+}
+
+.section-RED .contents {
+    padding-top: 240px;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.section-RED .contents .contents-left {
+    padding-top: 100px;
+    margin-right: 80px;
+    width: 60%;
+}
+
+.section-RED .contents .title {
+    font: normal normal bold 74px/90px Helvetica Neue;
+    letter-spacing: 7.4px;
+    text-align: left;
+    color: white;
+    margin-bottom: 28px;
+}
+
+.section-RED .contents .decription {
+    text-align: left;
+    font: normal normal normal 51px/61px Helvetica Neue;
+    letter-spacing: 5.1px;
+    color: #0B0B0B;
+}
+
+.section-RED .contents img {
+    width: 650px;
+    height: 650px;
+}
+
+.section-RED .contents button:hover {
+    cursor: pointer;
+}
+
+.section-RED .demoBtn {
+    margin-top: 40px;
+    width: 338px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 79px;
+    border: none;
+    font: normal normal bold 23px/28px Helvetica Neue;
+    letter-spacing: 2.3px;
+    color: var(--RED);
+}
+
+.section-RED .demoBtn:hover {
+    cursor: pointer;
 }
 
 /* YELLOW section */
@@ -103,16 +163,139 @@
     background-color: var(--YELLOW);
 }
 
+.section-YELLOW .contents {
+    float: right;
+    margin-right: 8%;
+    margin-top: 360px;
+    width: 50%;
+}
+
+.section-YELLOW .contents .title{
+    text-align: left;
+    font: normal normal bold 74px/90px Helvetica Neue;
+    letter-spacing: 7.4px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.section-YELLOW .contents .decription{
+    text-align: left;
+    font: normal normal normal 51px/61px Helvetica Neue;
+    letter-spacing: 5.1px;
+    color: #191919;
+}
+
+.section-YELLOW .demoBtn {
+    margin-top: 40px;
+    width: 338px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 79px;
+    border: none;
+    font: normal normal bold 23px/28px Helvetica Neue;
+    letter-spacing: 2.3px;
+    color: var(--YELLOW);
+}
+
+.section-YELLOW .demoBtn:hover {
+    cursor: pointer;
+}
+
 /* Perks section */
+
 .section-perks {
-    height: 1080px;
+    height: 1230px;
     background-color: #191919;
+    color: white
+}
+
+.section-perks .contents{
+    padding: 330px 8% 0 8%;
+}
+
+.section-perks .contents .title{
+    font: normal normal bold 74px/90px Helvetica Neue;
+    letter-spacing: 7.4px;
+    color: #FFFFFF;
+    margin-bottom: 84px;
+}
+
+.section-perks .perks-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-perks .perks-columns .column{
+    width: 26%;
+}
+
+.section-perks .perks-columns hr{
+    border-width: 2px;
+    width: 100px;
+    margin: 0 0 28px 0;
+}
+
+.section-perks .perks-columns .column .column-title{
+    font: normal normal bold 51px/62px Helvetica Neue;
+    letter-spacing: 5.1px;
+    width: 90%;
+    margin-bottom: 28px;
+}
+
+.section-perks .perks-columns .column .column-description{
+    font: normal normal normal 35px/41px Helvetica Neue;
+    letter-spacing: 3.5px;
 }
 
 /* Reviews section */
+
 .section-reviews {
     height: 1080px;
     background-color: var(--AQUA);
+}
+
+.section-reviews .contents {
+    padding: 360px 60px 0 5%;
+    display: flex;
+}
+
+.section-reviews .contents .reviews-container{
+    padding-left: 50px;
+}
+
+
+.section-reviews .contents .title{
+    text-align: left;
+    font: normal normal bold 74px/90px Helvetica Neue;
+    letter-spacing: 7.4px;
+    color: #FFFFFF;
+}
+
+.section-reviews .contents .reviews-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-reviews .contents .reviews-columns .stars{
+    padding-top: 66px;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+.section-reviews .contents .reviews-columns .artist{
+    margin-top: 26px;
+    text-align: left;
+    font: normal normal bold 35px/43px Helvetica Neue;
+    letter-spacing: 3.5px;
+    color: #FFFFFF;
+}
+
+.section-reviews .contents .reviews-columns .comment{
+    margin-top: 24px;
+    text-align: left;
+    font: normal normal normal 35px/41px Helvetica Neue;
+    letter-spacing: 3.5px;
+    color: #191919;
 }
 
 /* GetNow section */
@@ -121,8 +304,69 @@
     background-color: #191919;
 }
 
+.section-GetNow .contents{
+    padding: 350px 8% 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-GetNow .contents .title{
+    text-align: left;
+    font: normal normal bold 74px/90px Helvetica Neue;
+    letter-spacing: 7.4px;
+    color: #D34848;
+    padding-bottom: 20px;
+}
+
+.section-GetNow .contents .description{
+    text-align: left;
+    font: normal normal normal 51px/61px Helvetica Neue;
+    letter-spacing: 5.1px;
+    color: #FFFFFF;
+}
+
 /* Footer section */
+
 .section-Footer {
     height: 538px;
     background-color: #5E33D1;
+}
+
+.section-Footer .email {
+    font: normal normal normal 35px/41px Helvetica Neue;
+    letter-spacing: 3.5px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 180px 0 100px 140px;
+}
+
+.section-Footer .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-Footer .bottom .companyName{
+    font: normal normal normal 48px/57px Helvetica Neue;
+    letter-spacing: 4.8px;
+    color: #FFFFFF;
+    padding-bottom: 46px;
+}
+
+.section-Footer .bottom .legal{
+    font: normal normal normal 24px/29px Helvetica Neue;
+    letter-spacing: 2.4px;
+}
+
+/* Gradient CTA Button */
+.ctaBtn .btnText {
+    font: normal normal bold 23px/28px Helvetica Neue;
+    letter-spacing: 2.3px
+}
+
+.ctaBtn .btnText-small {
+    font: normal normal bold 18px/23px Helvetica Neue;
+    letter-spacing: 1.8px;
 }
