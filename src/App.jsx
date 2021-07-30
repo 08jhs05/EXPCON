@@ -8,19 +8,21 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import './App.css';
 
 function App() {
-    //this part gets current scroll position of window using usestate hook.
-    const [scrollPosition, setOffset] = useState(0);
+    //gets current scroll position of window using usestate hook. then pass it to navigation components as props
+    const [section, setSection] = useState('Hero');
+    const sectionNames = ['Hero', 'Red', 'Yellow', 'Perks', 'Reviews', 'GetNow', 'Footer'];
 
     useEffect(() => {
         window.onscroll = () => {
-        setOffset(window.pageYOffset)
+            setSection(sectionNames[Math.floor((window.pageYOffset+80)/1080)]); //convert scroll position value to section names
+                                                                                //the 80 added after page y offset is for navigation offset
         }
     }, []);
-
+    
   return (
     <div className="App">
-        <Navigation />
         <BrowserRouter>
+            <Navigation section={section}/>
             <Switch>
                 <Route exact path="/">
                     <Landing/>
