@@ -74,7 +74,7 @@ function NavbarTryBtn(props){
                         <div style={{
                             position: 'absolute',
                             zIndex: '-1',
-                            transform: 'translate(-50%, -85%)',
+                            transform: 'translate(-60%, -85%)',
                             left: MousePosition.x,
                             top: MousePosition.y,
                             width: `${x}px`,
