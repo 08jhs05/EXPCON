@@ -56,6 +56,7 @@
     cursor: pointer;
 }
 
+/* ======================= LANDING PAGE  ======================= */
 /* Hero section */
 
 .section-hero {
@@ -230,7 +231,7 @@
 }
 
 .section-perks .perks-columns hr{
-    border-width: 2px;
+    border-width: 1px;
     width: 100px;
     margin: 0 0 28px 0;
 }
@@ -299,6 +300,7 @@
 }
 
 /* GetNow section */
+
 .section-GetNow {
     height: 814px;
     background-color: #191919;
@@ -360,7 +362,150 @@
     letter-spacing: 2.4px;
 }
 
+/* ======================= PRICING PAGE  ======================= */
+
+.section-pricing {
+    height: 1890px;
+    background-color: #191919;
+}
+
+.section-pricing .contents {
+    padding: 308px 8% 0 8%;
+}
+
+.section-pricing .contents .title {
+    font: normal normal bold 74px/90px Helvetica Neue;
+    letter-spacing: 7.4px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+.section-pricing .contents .title-description {
+    font: normal normal normal 51px/80px Helvetica Neue;
+    letter-spacing: 5.1px;
+    color: #FFFFFF;
+    padding-bottom: 200px;
+}
+
+.section-pricing .contents .pricing-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-pricing .contents .pricing-columns hr{
+    border-width: 1px;
+    width: 140px;
+    margin: 20px 0 20px 0;
+}
+
+.section-pricing .contents .pricing-columns .column-title {
+    font: normal normal bold 42px/51px Helvetica Neue;
+    letter-spacing: 4.2px;
+}
+
+.section-pricing .contents .pricing-columns .column-price {
+    font: normal normal bold 135px/165px Helvetica Neue;
+    letter-spacing: 13.5px;
+}
+
+.section-pricing .contents .pricing-columns .column-description{
+    font: normal normal normal 47px/64px Helvetica Neue;
+    letter-spacing: 4.7px;
+    color: #FFFFFF;
+}
+
+.section-pricing .contents .pricing-columns button{
+    border-radius: 79px;
+    border: none;
+    width: 335px;
+    height: 84px;
+    font: normal normal bold 24px/29px Helvetica Neue;
+    letter-spacing: 2.4px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* ======================= PAYMENT PAGE  ======================= */
+
+.payment-section {
+    height: 1950px;
+}
+
+.payment-section .contents {
+    padding: 300px 8% 0 8%;
+}
+
+.payment-section .title{
+    font: normal normal bold 74px/90px Helvetica Neue;
+    letter-spacing: 7.4px;
+    color: #000000;
+    padding-bottom: 120px;
+}
+
+.payment-section .contents .radioGroup{
+    display: flex;
+    font: normal normal bold 37px/45px Helvetica Neue;
+    letter-spacing: 3.7px;
+}
+
+.payment-section .contents .radioGroup .radio{
+    padding-right: 80px;
+}
+
+.payment-section .contents .radioGroup .btn-check{
+    height: 28px;
+    width: 28px;
+
+}
+
+.payment-section .contents .formsSection {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.payment-section .formsSection .formColumn {
+    width: 45%;
+}
+
+.payment-section .sectionName {
+    font: normal normal normal 45px/71px Helvetica Neue;
+    letter-spacing: 4.5px;
+    color: #000000;
+    padding-bottom: 50px;
+}
+
+.payment-section .selectPlan {
+    padding-bottom: 150px;
+}
+
+.payment-section .contents .twoForms{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-section .contents .formLabel {
+    font: normal normal bold 22px/34px Helvetica Neue;
+    letter-spacing: 2.2px;
+    color: #000000;
+}
+
+.payment-section .contents .form {
+    height: 60px;
+}
+
+.payment-section .confirm {
+    letter-spacing: 2.2px;
+    width: 650px;
+}
+
+.payment-section .confirm .blueText {
+    color: #2F1FE9;
+    font: normal normal bold 22px/34px Helvetica Neue;
+}
+
 /* Gradient CTA Button */
+
 .ctaBtn .btnText {
     font: normal normal bold 23px/28px Helvetica Neue;
     letter-spacing: 2.3px
