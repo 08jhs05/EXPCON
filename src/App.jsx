@@ -9,7 +9,7 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import './App.css';
 
 function App() {
-    //gets current scroll position of window using usestate hook. then pass it to navigation components as props
+    //gets current scroll position of window using usestate hook. then pass it to navigation component as props
     const [section, setSection] = useState('Hero');
     const sectionNames = ['Hero', 'Red', 'Yellow', 'Perks', 'Reviews', 'GetNow', 'Footer'];
 

@@ -8,6 +8,7 @@
 
 .navbar {
     position: fixed;
+    z-index: 999;
     top: 0;
     width: 100%;
 }
@@ -136,6 +137,7 @@
 .section-RED .contents img {
     width: 650px;
     height: 650px;
+    cursor: url('./cursorImages/cursor-click.png') 60 60, auto;
 }
 
 .section-RED .contents button:hover {
@@ -162,11 +164,11 @@
 .section-YELLOW {
     height: 1080px;
     background-color: var(--YELLOW);
+    cursor: url('./cursorImages/cursor-reveal.png') 60 60, auto;
 }
 
 .section-YELLOW .contents {
     float: right;
-    margin-right: 8%;
     margin-top: 360px;
     width: 50%;
 }
