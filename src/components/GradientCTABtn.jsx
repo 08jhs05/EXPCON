@@ -20,7 +20,7 @@ function GradientCTABtn(props){
     const btnStyle = {
         width: '284px',
         height: '80px',
-        background: onHover ? '#FFB33F' : 'linear-gradient(to right, #1FE1E9, #4405f7, #D34848, #FFB33F)',
+        background: 'linear-gradient(to right, #1FE1E9, #4405f7, #D34848, #FFB33F)', //onHover ? '#FFB33F' : 
         border: 'none',
         color: 'white',
         fontSize: '1.2em',
@@ -28,28 +28,28 @@ function GradientCTABtn(props){
         outline: 'none',
         overflow: 'hidden',
         borderRadius: '100px',
-        clipPath: 'inset(100% round 100px)'
+        // clipPath: 'inset(100%)'
     }
 
-    const btnHoverStyles = {
-        position: 'absolute',
-        zIndex: '-1',
-        left: MousePosition.x-250,
-        top: MousePosition.y-250,
-        width: '500px',
-        height: '500px',
-        background: 'radial-gradient(circle closest-side, #1FE1E9, #4405f7, #D34848, transparent)',
-        transition: 'width .2s ease, height .2s ease'
-    };
+    // const btnHoverStyles = {
+    //     position: 'absolute',
+    //     zIndex: '-1',
+    //     left: MousePosition.x-250,
+    //     top: MousePosition.y-250,
+    //     width: '500px',
+    //     height: '500px',
+    //     background: 'radial-gradient(circle closest-side, #1FE1E9, #4405f7, #D34848, transparent)',
+    //     transition: 'width .2s ease, height .2s ease'
+    // };
 
     return (
-        <Link to="/pricing">
+        <Link to={"pricing"}>
             <button onMouseMove={(event => {handleMouseMove(event)})}
                 className="ctaBtn"
                 style={btnStyle}
             >
-                <div style={btnHoverStyles}></div>
-                <div className="btnText">TRY IT NOW</div>
+                {/* <div style={btnHoverStyles}></div> */}
+                <div className="btnText">{props.text}</div>
             </button>
         </Link>
     )
