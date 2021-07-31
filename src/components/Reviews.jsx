@@ -8,7 +8,7 @@ function Reviews(props){
         <div className="section-reviews">
             <div className="contents">
                 <div>
-                    <img src={'/img/speakers2.png'} />
+                    <img src={'/img/speakers2.png'} alt="speakers"/>
                 </div>
                 <div className="reviews-container">
                     <div className="title">
@@ -16,7 +16,7 @@ function Reviews(props){
                     </div>
                     <div className="reviews-columns">
                         {artistNames.map(elem => {
-                            return (<div className="column">
+                            return (<div className="column" key={elem}>
                                 <div className="stars">
                                     ★★★★★
                                 </div>

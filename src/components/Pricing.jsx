@@ -26,7 +26,7 @@ function Pricing(props){
                     <div className="pricing-columns">
                         {columnProps.map(elem => {
                             return(
-                                <div className="column">
+                                <div className="column" key={elem.title}>
                                     <div className="column-title" style={{color: elem.color}}>
                                         {elem.title}
                                         <hr style={{borderColor: elem.color}}/>
@@ -35,14 +35,14 @@ function Pricing(props){
                                     <div className="column-price" style={{color: elem.color}}>
                                         {elem.price}
                                     </div>
-                                    <p className="column-description">
+                                    <div className="column-description">
                                         {elem.words.map(innerElement => {
                                             return(
-                                                <div><MusicNote />{innerElement}</div>
+                                                <div key={innerElement}><MusicNote />{innerElement}</div>
                                             );
                                         })
                                         }
-                                    </p>
+                                    </div>
                                     <Link to={"payment"}>
                                         <button style={{backgroundColor: elem.color}}>SELECT</button>
                                     </Link>

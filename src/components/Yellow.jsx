@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 function Yellow(props){
 
+    //records current mouse position and save it to state
+    //this will be used for clipping background image with dynamic clippng coordinate
     const [MousePosition, setMousePosition] = useState({
         x: 0,
         y: 0
@@ -10,6 +12,10 @@ function Yellow(props){
     function handleMouseMove(event) {
         setMousePosition({x: event.pageX, y: event.pageY});
     };
+
+    // clippath is defined first with circle vectors,
+    // and background image is clipped with the clippath using clippath: "url(#svgPath)" 
+    // circle vector at line 29 has dynamic coordinate depending on current mouse position
 
     return (
         <div className="section-YELLOW" onMouseMove={(event => {handleMouseMove(event)})}>
@@ -27,7 +33,8 @@ function Yellow(props){
                 <img src={"/img/background/Image4.png"} alt="stage"
                     style={{
                     clipPath:"url(#svgPath)",
-                    width: '100%', height:1080,
+                    width: '100%',
+                    height: 1080,
                     objectFit: 'cover'
                     }}/>
             </div>
