@@ -4,12 +4,17 @@ import NavbarTryBtn from './NavbarTryBtn';
 import NavDropdown from './NavDropdown';
 
 function Navigation(props){
-    //if current section is 'hero', button won't show up in the navbar.
+    //if current section is 'hero' or 'getNow', button won't show up in the navbar. it also wont appear at payment/pricing page
     return (
         <Navbar bg="light" expand="lg" className="navbar">
             <Container className="nav-container">
                 <NavDropdown />
-                {!(props.section === 'Hero'|| props.section === 'GetNow')&&<NavbarTryBtn section={props.section}/>}
+                { window.location.pathname !== "/payment" &&
+                    window.location.pathname !== "/pricing" &&
+                    props.section !== 'Hero' &&
+                    props.section !== 'GetNow' &&
+                    <NavbarTryBtn section={props.section}/>
+                }
             </Container>
         </Navbar>
     )
