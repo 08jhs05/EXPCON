@@ -64,17 +64,21 @@
     height: 1080px;
 }
 
-.section-hero .bgImage {
-    filter: brightness(60%);
+.section-hero .imageCarousel {
     position: absolute;
+    z-index: -999;
     width: 100%;
     height: 1080px;
-    object-fit: cover;
-    z-index: -999;
+    overflow: hidden;
+}
+
+.section-hero .imageCarousel .bgImage{
+    width: 1920px;
+    object-fit: fill;
 }
 
 .section-hero .contents{
-    padding-top: 442px;
+    padding-top: 410px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,6 +100,15 @@
     font: normal normal normal 32px/44px Helvetica Neue;
     letter-spacing: 3.2px;
     color: #FFFFFF;
+}
+
+.section-hero .btn-group {
+    padding-top: 200px;
+}
+
+.section-hero .btn-group input{
+    width: 20px;
+    height: 20px;
 }
 
 /* RED section */
@@ -408,12 +421,14 @@
 .section-pricing .contents .pricing-columns .column-price {
     font: normal normal bold 135px/165px Helvetica Neue;
     letter-spacing: 13.5px;
+    padding-bottom: 40px;
 }
 
 .section-pricing .contents .pricing-columns .column-description{
     font: normal normal normal 47px/64px Helvetica Neue;
     letter-spacing: 4.7px;
     color: #FFFFFF;
+    padding-bottom: 40px;
 }
 
 .section-pricing .contents .pricing-columns button{
