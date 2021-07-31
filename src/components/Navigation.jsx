@@ -8,7 +8,7 @@ function Navigation(props){
     return (
         <Navbar bg="light" expand="lg" className="navbar">
             <Container className="nav-container">
-                <NavDropdown />
+                <NavDropdown section={props.section}/>
                 { window.location.pathname !== "/payment" &&
                     window.location.pathname !== "/pricing" &&
                     props.section !== 'Hero' &&

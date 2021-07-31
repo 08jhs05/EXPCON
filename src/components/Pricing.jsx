@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 function Pricing(props){
     //this props will be rendered with map function below.
-    const columnProps = [{title:'BASIC', term:'MONTHLY', price:'$9', color: {color: '#D24848'}, borderColor: {borderColor: '#D24848'}, backgroundColor: {backgroundColor: '#D24848'}
+    const columnProps = [{title:'BASIC', term:'MONTHLY', price:'$9', color: '#D24848'
                                 , words: ["Very good", "Amazing", "Perfect job", "Love this", "It’s so good", "Features"]},
-                            {title:'ADVANCED', term:'YEARLY', price:'$99', color: {color: '#FFB33F'}, borderColor: {borderColor: '#FFB33F'}, backgroundColor: {backgroundColor: '#FFB33F'}
+                            {title:'ADVANCED', term:'YEARLY', price:'$99', color: '#FFB33F'
                                 , words: ["Very very good", "Even Amazing", "Perfect job", "Love this more", "It’s so so good", "More Features"]},
-                            {title:'PRO', term:'YEARLY', price:'$120', color: {color: '#1FE1E9'}, borderColor: {borderColor: '#1FE1E9'}, backgroundColor: {backgroundColor: '#1FE1E9'}
+                            {title:'PRO', term:'YEARLY', price:'$120', color: '#1FE1E9'
                                 , words: ["Very very good", "Even more", "Perfect job", "Love this more", "It’s so so good", "More Features"]}];
 
     return (
@@ -27,12 +27,12 @@ function Pricing(props){
                         {columnProps.map(elem => {
                             return(
                                 <div className="column">
-                                    <div className="column-title" style={elem.color}>
+                                    <div className="column-title" style={{color: elem.color}}>
                                         {elem.title}
-                                        <hr style={elem.borderColor}/>
+                                        <hr style={{borderColor: elem.color}}/>
                                         {elem.term}
                                     </div>
-                                    <div className="column-price" style={elem.color}>
+                                    <div className="column-price" style={{color: elem.color}}>
                                         {elem.price}
                                     </div>
                                     <p className="column-description">
@@ -44,7 +44,7 @@ function Pricing(props){
                                         }
                                     </p>
                                     <Link to={"payment"}>
-                                        <button style={elem.backgroundColor}>SELECT</button>
+                                        <button style={{backgroundColor: elem.color}}>SELECT</button>
                                     </Link>
                                 </div>);
                         })}
