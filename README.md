@@ -1,5 +1,6 @@
 # EXP|CON
 
-React-bootstrap
-react-bootstrap-icons
-react-router-dom
+- React-bootstrap
+- react-bootstrap-icons
+- react-router-dom
+- react-motion
