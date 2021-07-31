@@ -17,7 +17,7 @@ function NavbarTryBtn(props){
         outline: 'none',
         overflow: 'hidden',
         borderRadius: '100px',
-        clipPath: 'inset(100% round 100px)'
+        // clipPath: 'inset(100% round 100px)'
     }
 
     const btnHoverStyles = {
@@ -38,6 +38,8 @@ function NavbarTryBtn(props){
                 break;
             case 'Reviews':
                 setbtnStyleColors({textColor: '#1FE1E9', bgColor: 'white'})
+                break;
+            default:
                 break;
         }
     }, [props.section]);

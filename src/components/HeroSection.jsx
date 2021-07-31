@@ -12,7 +12,7 @@ function HeroSection(props){
                 <div className="description">
                     Experience your favourite artists like never before and from the comfort of your own home.
                 </div>
-                <GradientCTABtn/>
+                <GradientCTABtn text={"TRY IT NOW"}/>
             </div>
         </div>
     );

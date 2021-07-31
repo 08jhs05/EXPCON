@@ -1,6 +1,9 @@
 import React from 'react';
 
 function Reviews(props){
+
+    const artistNames = ['ARTIST', 'PRODUCER', 'MUSIC FAN']; // will be used for map function below for repeating elements
+
     return (
         <div className="section-reviews">
             <div className="contents">
@@ -12,39 +15,19 @@ function Reviews(props){
                         REVIEWS
                     </div>
                     <div className="reviews-columns">
-                        <div className="column">
-                            <div className="stars">
-                                ★★★★★
-                            </div>
-                            <div className="artist">
-                                ARTIST
-                            </div>
-                            <p className="comment">
-                                “Love it, it’s the Best.I can’t live without it!”
-                            </p>
-                        </div>
-                        <div className="column">
-                            <div className="stars">
-                                ★★★★★
-                            </div>
-                            <div className="artist">
-                                PRODUCER
-                            </div>
-                            <p className="comment">
-                                “Love it, it’s the Best.I can’t live without it!”
-                            </p>
-                        </div>
-                        <div className="column">
-                            <div className="stars">
-                                ★★★★★
-                            </div>
-                            <div className="artist">
-                                MUSIC FAN
-                            </div>
-                            <p className="comment">
-                                “Love it, it’s the Best.I can’t live without it!”
-                            </p>
-                        </div>
+                        {artistNames.map(elem => {
+                            return (<div className="column">
+                                <div className="stars">
+                                    ★★★★★
+                                </div>
+                                <div className="artist">
+                                    {elem}
+                                </div>
+                                <p className="comment">
+                                    “Love it, it’s the Best. I can’t live without it!”
+                                </p>
+                            </div>)
+                        })}
                     </div>
                 </div>
             </div>

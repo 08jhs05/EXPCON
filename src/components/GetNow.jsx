@@ -13,7 +13,7 @@ function GetNow(props){
                         Purchase and download the app.
                     </div>
                 </div>
-                <GradientCTABtn />
+                <GradientCTABtn text={"TRY IT NOW"}/>
             </div>
         </div>
     )

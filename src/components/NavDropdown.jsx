@@ -8,16 +8,20 @@ function NavDropdown(props){
     const onClickDropdown = () => {
         setExpend(!isMenuExpanded);
     }
+    //texts will have black color at payment page
+    const paymentPageStyle = {
+        color: window.location.pathname==="/payment" ? 'black' : 'white'
+    }
 
     return (
         <div className="navDropdown">
-            <button className="navTitle" onClick={() => onClickDropdown()}>
+            <button className="navTitle" onClick={() => onClickDropdown()}  style={paymentPageStyle}>
                 <List/><div className="navTitle-text">EXP|CON</div>
             </button>
             {isMenuExpanded && <div className="navDropdownItemList">
-                <button className="navDropdownItem">WHAT IS IT</button>
-                <button className="navDropdownItem">PERKS</button>
-                <button className="navDropdownItem">PRICING</button>
+                <button className="navDropdownItem" style={paymentPageStyle}>WHAT IS IT</button>
+                <button className="navDropdownItem"  style={paymentPageStyle}>PERKS</button>
+                <button className="navDropdownItem"  style={paymentPageStyle}>PRICING</button>
             </div>}
         </div>
     )
